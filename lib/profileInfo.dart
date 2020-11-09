@@ -8,20 +8,20 @@ class ProfileInfo extends StatelessWidget {
   profileImage (context) => AnimatedContainer(
     duration: Duration(seconds: 1),
     height: ResponsiveWidget.isSmallScreen(context)
-            ? MediaQuery.of(context).size.height * 0.25
-            : MediaQuery.of(context).size.width * 0.25,
+        ? MediaQuery.of(context).size.height * 0.25
+        : MediaQuery.of(context).size.width * 0.25,
     width: ResponsiveWidget.isSmallScreen(context)
-          ? MediaQuery.of(context).size.height * 0.25
-          : MediaQuery.of(context).size.width * 0.25,
+        ? MediaQuery.of(context).size.height * 0.25
+        : MediaQuery.of(context).size.width * 0.25,
     decoration: BoxDecoration(
-      backgroundBlendMode: BlendMode.luminosity,
-      color: Colors.deepOrangeAccent,
-      shape: BoxShape.circle,
-      image: DecorationImage(
-        image: AssetImage("jlr.jpg"),
-        alignment: Alignment.center,
-        fit: BoxFit.cover
-      )
+        backgroundBlendMode: BlendMode.luminosity,
+        color: Colors.deepOrangeAccent,
+        shape: BoxShape.circle,
+        image: DecorationImage(
+            image: AssetImage("jlr.jpg"),
+            alignment: Alignment.center,
+            fit: BoxFit.cover
+        )
     ),
   );
 
@@ -61,9 +61,9 @@ class ProfileInfo extends StatelessWidget {
           ),
           SizedBox(width: 20.0,),
           OutlineButton(
-            onPressed: (null),
+            onPressed: () {},
             borderSide: BorderSide(
-              color: Colors.red
+                color: Colors.red
             ),
             shape: StadiumBorder(),
             child: Text("Say Hi!"),

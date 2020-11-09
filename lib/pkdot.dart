@@ -8,7 +8,7 @@ class PKDot extends StatelessWidget {
       children: [
         Text(
           "JLR",
-          textScaleFactor: 2,
+          textScaleFactor: 1,
           style: TextStyle(
             fontWeight: FontWeight.bold
           ),
