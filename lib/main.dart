@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/profilePage.dart';
+import 'package:my_portfolio/projects.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,6 +16,11 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primaryColor: Colors.black,
       ),
+      initialRoute: ProfilePage.route,
+      routes: {
+        ProfilePage.route: (context) => ProfilePage(),
+        ProjectsPage.route: (context) => ProjectsPage(),
+      },
       home: ProfilePage(),
     );
   }

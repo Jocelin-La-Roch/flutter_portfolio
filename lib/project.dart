@@ -65,15 +65,15 @@ class Project extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            height: 400,
-            width: MediaQuery.of(context).size.width * 0.6,
+            height: MediaQuery.of(context).size.height * 0.8,
+            width: MediaQuery.of(context).size.width * 0.9,
             child: Card(
               color: Colors.red,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Image.asset("jlr.jpg", height: 300, width: MediaQuery.of(context).size.width * 0.6, fit: BoxFit.cover,),
+                  Image.asset("jlr.jpg", height: MediaQuery.of(context).size.height * 0.65, width: MediaQuery.of(context).size.width * 0.9, fit: BoxFit.cover,),
                   Text("Project name"),
                   Text("Project name"),
                 ],
@@ -81,15 +81,15 @@ class Project extends StatelessWidget {
             ),
           ),
           Container(
-            height: 400,
-            width: MediaQuery.of(context).size.width * 0.6,
+            height: MediaQuery.of(context).size.height * 0.8,
+            width: MediaQuery.of(context).size.width * 0.9,
             child: Card(
               color: Colors.red,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Image.asset("jlr.jpg", height: 300, width: MediaQuery.of(context).size.width * 0.6, fit: BoxFit.cover,),
+                  Image.asset("jlr.jpg", height: MediaQuery.of(context).size.height * 0.65, width: MediaQuery.of(context).size.width * 0.9, fit: BoxFit.cover,),
                   Text("Project name"),
                   Text("Project name"),
                 ],
